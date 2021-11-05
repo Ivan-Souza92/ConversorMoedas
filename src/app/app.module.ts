@@ -15,7 +15,6 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSortModule} from "@angular/material/sort";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import { RodapeComponent } from './template/rodape/rodape.component';
 
 
 @NgModule({
@@ -26,7 +25,6 @@ import { RodapeComponent } from './template/rodape/rodape.component';
     ConverterMoedasComponent,
     ConverterRealDolarComponent,
     ListarSimbolosComponent,
-    RodapeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +39,6 @@ import { RodapeComponent } from './template/rodape/rodape.component';
     MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent, TopoComponent, RodapeComponent]
+  bootstrap: [AppComponent, TopoComponent]
 })
 export class AppModule { }

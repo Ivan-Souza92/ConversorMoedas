@@ -1,1 +1,25 @@
-<p>converter-moedas works!</p>
+
+
+<div class="container" style="margin-top: 60px;">
+    <form class="row g-3" (ngSubmit)="convertedCurrency()">
+        <div class="col-md-6">
+          <label for="moedaOrigem" class="form-label">Moeda de Origem</label>
+          <input type="text" class="form-control" name="mOrigem" [(ngModel)]="mOrigem">
+        </div>
+        <div class="col-md-6">
+          <label for="destino" class="form-label">Moeda Destino</label>
+          <input type="text" class="form-control" name="mDestino" [(ngModel)]="mDestino">
+        </div>
+        <div class="col-md-2">
+            <label for="valor" class="form-label">Valor</label>
+            <input type="text" class="form-control" name="valor" placeholder="valor" [(ngModel)]="value">
+          </div>
+        <div class="col-md-2">
+          <label for="valorConvertido" class="form-label">Valor Convertido</label>
+          <input type="text" class="form-control" disabled="true" name="valCovertido" value="{{valConvertido}}">
+        </div>
+        <div class="col-12" style="margin-top: 40px;">
+          <button type="submit" class="btn btn-primary">Converter</button>
+        </div>
+      </form>
+</div>
