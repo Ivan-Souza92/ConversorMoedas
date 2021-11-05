@@ -15,6 +15,10 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSortModule} from "@angular/material/sort";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import { RodapeComponent } from './template/rodape/rodape.component';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
+
 
 
 @NgModule({
@@ -25,20 +29,23 @@ import {MatInputModule} from "@angular/material/input";
     ConverterMoedasComponent,
     ConverterRealDolarComponent,
     ListarSimbolosComponent,
+    RodapeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatToolbarModule,
-    MatSortModule,
-    MatFormFieldModule,
-    MatInputModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatFormFieldModule,
+        MatPaginatorModule,
+        MatToolbarModule,
+        MatSortModule,
+        MatFormFieldModule,
+        MatInputModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
-  bootstrap: [AppComponent, TopoComponent]
+  bootstrap: [AppComponent, TopoComponent, RodapeComponent]
 })
 export class AppModule { }
